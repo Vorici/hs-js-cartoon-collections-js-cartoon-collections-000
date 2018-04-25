@@ -4,10 +4,11 @@ var  dwarvesNum = []
 
 for (var i = 0; i < dwarves.length; i++ ){
   
-  dwarvesNum.push ([i + 1] + ". " + dwarves[i])
+  dwarvesNum.push ([i + 1] + ". " + dwarves[i] + ' ')
 }
   
-  return dwarvesNum;
+  dwarvesNum.toString();
+  return dwarvesNum.join('');
 }
 
 function summonCaptainPlanet(planeteerCalls){
@@ -21,7 +22,26 @@ function summonCaptainPlanet(planeteerCalls){
 }
 
 function longPlaneteerCalls(words) {
+  
+   for (var i=0; i<words.length;i++){
+    if (words[i].length > 4){
+      return true 
+    
+    } else {return false}
+  }
 }
 
 function findTheCheese (foods) {
+  
+  var cheeseTypes = ["cheddar", "gouda", "camembert"];
+  var cheeseFound = "no cheese!"
+  
+  for (var i = 0; i < cheeseTypes.length; i++) {
+     if (foods.indexOf(cheeseTypes[i]) > -1) {
+         cheeseFound = cheeseTypes[i];
+         break;
+     }
+  }
+  
+  return cheeseFound;
 }
