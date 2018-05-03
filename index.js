@@ -2,6 +2,7 @@ function dwarfRollCall(dwarves) {
   
 var  dwarvesNum = []
 
+
 for (var i = 0; i < dwarves.length; i++ ){
   
   dwarvesNum.push ([i + 1] + ". " + dwarves[i] + ' ')
